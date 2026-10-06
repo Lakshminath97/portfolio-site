@@ -205,6 +205,24 @@
     });
   }
 
+  /* ---------- Project images: picked up automatically by file name ----------
+     Upload e.g. assets/work/forklift.jpg and the matching card shows it.
+     If the file isn't there, the placeholder / schematic stays. */
+  function initCardImages() {
+    document.querySelectorAll('.card-fig[data-img]').forEach(function (fig) {
+      var img = new Image();
+      img.alt = fig.getAttribute('data-alt') || '';
+      img.decoding = 'async';
+      img.onload = function () {
+        fig.textContent = '';
+        fig.appendChild(img);
+        fig.classList.add('has-img');
+        fig.removeAttribute('aria-hidden');
+      };
+      img.src = fig.getAttribute('data-img');
+    });
+  }
+
   function init() {
     initTheme();
     initReveals();
@@ -213,6 +231,7 @@
     initFilters();
     initLens();
     initNav();
+    initCardImages();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
