@@ -4,7 +4,7 @@ Personal portfolio of **Lakshminath K — Senior XR Developer** (Chennai, India)
 
 > VR training that feels like the real machine. Engineering design meets enterprise XR, AI & simulation for immersive learning.
 
-**Live site:** _TODO: add the Vercel URL here_
+**Live site:** https://portfolio-site-swart-nine-92.vercel.app
 
 ## What's on the site
 
