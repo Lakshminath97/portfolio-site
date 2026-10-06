@@ -168,20 +168,20 @@
               <h3>Designing for production</h3>
               <p class="tl-role">Graduate Engineering Trainee &middot; SACHA Engineering</p>
               <p>Body-in-White (BIW) fixture design in CATIA V5 and Unigraphics NX 12.</p>
-              <p class="tl-first"><span class="tag tag-accent">FIRST XR</span> Sep&ndash;Nov 2019, deployed at Ford: built VR factory simulations from point-cloud data using Autodesk Inventor and Navisworks.</p>
+              <p class="tl-first"><span class="tag tag-accent">FIRST XR</span> Sep&ndash;Nov 2019, deployed at Ford: designed factory components from point-cloud data and built a VR factory walkthrough using Autodesk Inventor and Navisworks.</p>
             </li>
             <li class="tl-item reveal" data-xr="0.40">
               <p class="tl-years">2021 &ndash; 2022</p>
               <h3>Engineer</h3>
               <p class="tl-role">SACHA Engineering</p>
-              <p>Welding tools, grippers and BIW fixtures for global automotive programs, released to production. VR-ready models and VR design reviews with global teams.</p>
+              <p>Fixtures, grippers and welding tools for BIW and A-class surface parts on global automotive programs, released to production. Clamp load and cantilever calculations, project delivery and version control. VR-ready models and VR design reviews with global teams.</p>
             </li>
             <li class="tl-item reveal" data-xr="0.62">
               <p class="tl-years">2022 &ndash; 2026</p>
               <h3>Engineer</h3>
               <p class="tl-role">Valeo India</p>
-              <p>Automotive HVAC product design: CATIA V5, DFM/DFA, GD&amp;T, injection-moulded parts.</p>
-              <p>Built a CAD automation tool in C# with NX Open &mdash; a <strong>40% improvement in design efficiency</strong>.</p>
+              <p>Automotive HVAC product design, from simple parts to complex HVAC components: CATIA V5, DFM/DFA, GD&amp;T, injection-moulded parts, version control on ENOVIA V6, vibration-jig simulations and virtual HVAC assembly modules.</p>
+              <p>Built a CAD automation tool in C# with NX Open that generates standard screw parts and drawings &mdash; a <strong>40% improvement in design efficiency</strong>.</p>
               <p>Unity3D XR factory simulations for design reviews.</p>
             </li>
             <li class="tl-item reveal" data-xr="0.94">
@@ -189,7 +189,7 @@
               <h3>Senior XR Developer</h3>
               <p class="tl-role">Spatio</p>
               <p>Enterprise VR training end to end: client scope capture, SOP structuring, Unity/C# development, and on-site deployment on Meta Quest, Pico, HTC VIVE and PC VR.</p>
-              <p>Owned a flagship project worth <strong>INR 75 lakh</strong> from ideation to deployment. Lead a team of developers.</p>
+              <p>Owned a flagship project from ideation to deployment. Lead a team of developers.</p>
             </li>
           </ol>
         </div>
@@ -202,14 +202,14 @@
     <section class="section" id="think" aria-labelledby="think-title">
       <div class="wrap">
         <header class="section-head reveal">
-          <p class="label">SOP &rarr; VR DESIGN</p>
+          <p class="label">SOP &rarr; VR DESIGN &middot; LOTO</p>
           <h2 id="think-title">How a procedure becomes a VR module</h2>
           <p class="lead">Every SOP step gets four things: a trigger, a validation check, the mistake it catches, and the feedback the trainee gets. Pick a step to see its design.</p>
-          <p class="note">Generic valve-isolation example for illustration &mdash; not taken from any client procedure.</p>
+          <p class="note">Example: simplified lockout/tagout (LOTO) of a process valve. Real procedures add steps such as notifying affected personnel, shutting down equipment and double block-and-bleed. Not taken from any client procedure.</p>
         </header>
 
         <div class="sop reveal">
-          <div class="sop-steps" role="tablist" aria-label="Valve isolation procedure" aria-orientation="vertical">
+          <div class="sop-steps" role="tablist" aria-label="Simplified lockout/tagout procedure" aria-orientation="vertical">
             <button class="sop-step" role="tab" id="sop-tab-1" aria-controls="sop-panel-1" aria-selected="true" type="button">
               <span class="sop-num">01</span><span class="sop-name">Identify the valve against the permit</span>
             </button>
@@ -220,7 +220,7 @@
               <span class="sop-num">03</span><span class="sop-name">Apply lock and tag</span>
             </button>
             <button class="sop-step" role="tab" id="sop-tab-4" aria-controls="sop-panel-4" aria-selected="false" tabindex="-1" type="button">
-              <span class="sop-num">04</span><span class="sop-name">Bleed off trapped pressure</span>
+              <span class="sop-num">04</span><span class="sop-name">Release stored energy (bleed)</span>
             </button>
             <button class="sop-step" role="tab" id="sop-tab-5" aria-controls="sop-panel-5" aria-selected="false" tabindex="-1" type="button">
               <span class="sop-num">05</span><span class="sop-name">Verify zero energy</span>
@@ -260,7 +260,7 @@
             </div>
             <div class="sop-panel" role="tabpanel" id="sop-panel-4" aria-labelledby="sop-tab-4" tabindex="0" hidden>
               <p class="label">STEP 04 &middot; VR DESIGN</p>
-              <h3>Bleed off trapped pressure</h3>
+              <h3>Release stored energy (bleed)</h3>
               <dl class="spec">
                 <div><dt>Trigger</dt><dd>Trainee opens the bleed valve downstream of the isolation point.</dd></div>
                 <div><dt>Validation</dt><dd>The local pressure gauge must read zero before the bleed valve is left and the next step begins.</dd></div>
@@ -324,41 +324,17 @@
             </dl>
           </article>
 
-          <!-- 2 -->
-          <article class="card reveal" data-cats="vr">
-            <div class="card-fig">
-              <!-- TODO: optional thumbnail for the training modules -->
-              <span>FIG. 02</span>
-            </div>
-            <div class="card-body">
-              <p class="card-cat">VR TRAINING</p>
-              <h3>Enterprise VR training modules</h3>
-              <p>VR training built end to end, from SOP structuring to on-site deployment.</p>
-              <p><a class="link" href="https://www.youtube.com/@spatio_xr/videos" target="_blank" rel="noopener">Selected modules on Spatio's channel <span aria-hidden="true">&nearr;</span></a></p>
-              <!-- TODO: list which modules I built/led -->
-              <p class="role"><span>My role</span> <em class="muted">Details to follow</em></p>
-              <ul class="tags" aria-label="Tools"><li>Unity3D</li><li>C#</li><li>Meta Quest</li><li>Pico</li><li>HTC VIVE</li><li>PC VR</li></ul>
-              <button class="lens-toggle" type="button" aria-expanded="false" aria-controls="lens-2">Engineer's lens</button>
-              <p class="lens" id="lens-2" hidden>An SOP reads like an assembly sequence: each step has a precondition, a tolerance and a failure mode, and the module is built to check all three.</p>
-            </div>
-            <dl class="title-block" aria-label="Drawing title block">
-              <div><dt>REV</dt><dd>A</dd></div>
-              <div><dt>YEAR</dt><dd>2026</dd></div>
-              <div><dt>TYPE</dt><dd>UNITY / C#</dd></div>
-            </dl>
-          </article>
-
           <!-- 3 -->
           <article class="card reveal" data-cats="cad">
             <div class="card-fig card-fig-diagram" aria-hidden="true">
               <!-- No screenshots of company data — schematic only -->
-              <svg viewBox="0 0 240 120"><g fill="none" stroke="currentColor" stroke-width="1.2"><rect x="10" y="38" width="56" height="44"/><rect x="92" y="38" width="56" height="44"/><rect x="174" y="20" width="56" height="34"/><rect x="174" y="66" width="56" height="34"/><path d="M66 60h26M148 60h14v-23h12M162 60v23h12"/></g><g font-size="8" fill="currentColor" font-family="Geist Mono, monospace" text-anchor="middle"><text x="38" y="63">INPUT UI</text><text x="120" y="63">NX OPEN</text><text x="202" y="40">3D MODEL</text><text x="202" y="86">2D DRAWING</text></g></svg>
+              <svg viewBox="0 0 240 120"><g fill="none" stroke="currentColor" stroke-width="1.2"><rect x="8" y="42" width="60" height="36"/><rect x="92" y="42" width="56" height="36"/><rect x="174" y="10" width="58" height="28"/><rect x="174" y="46" width="58" height="28"/><rect x="174" y="82" width="58" height="28"/><path d="M68 60h24M148 60h12M160 24v72M160 24h14M160 60h14M160 96h14"/></g><g font-size="8" fill="currentColor" font-family="Geist Mono, monospace" text-anchor="middle"><text x="38" y="58">SELECT</text><text x="38" y="69">M8&#215;16</text><text x="120" y="63">NX OPEN</text><text x="203" y="27">3D PART</text><text x="203" y="63">2D DRAWING</text><text x="203" y="99">DRAWING PDF</text></g></svg>
             </div>
             <div class="card-body">
               <p class="card-cat">CAD &amp; AUTOMATION</p>
               <h3>CAD Automation Tool</h3>
-              <p>A standardized screw-selection UI that automatically generates the 3D model and 2D drawing &mdash; a 40% gain in design efficiency.</p>
-              <p class="role"><span>My role</span> Built the tool in C# on the NX Open API.</p>
+              <p>A standard-part library for screws that share a design but differ in diameter and length. Select a size such as M8&times;16 and the tool generates the 3D part, its 2D drawing and a drawing PDF &mdash; covering almost every screw variant in use, for a 40% gain in design efficiency.</p>
+              <p class="role"><span>My role</span> Developed the standard screw part and drawing, and automated their generation in C# with the NX Open API.</p>
               <ul class="tags" aria-label="Tools"><li>C#</li><li>NX Open API</li><li>Siemens NX</li></ul>
               <button class="lens-toggle" type="button" aria-expanded="false" aria-controls="lens-3">Engineer's lens</button>
               <p class="lens" id="lens-3" hidden>Standard parts are a catalogue problem, not a design problem &mdash; encode the selection rules once and a repeated source of error disappears from every drawing.</p>
@@ -374,16 +350,16 @@
           <article class="card reveal" data-cats="viz cad">
             <div class="card-fig">
               <!-- TODO: photo of BIW fixture work (no company/customer data). Save as assets/biw-fixture.jpg -->
-              <span>FIG. 04</span>
+              <span>FIG. 03</span>
             </div>
             <div class="card-body">
               <p class="card-cat">VISUALIZATION &middot; DESIGN</p>
               <h3>BIW Fixture Design</h3>
-              <p>Body-in-White fixtures, welding tools and grippers for global automotive programs, released to production, with VR-ready models for design reviews.</p>
-              <p class="role"><span>My role</span> Fixture design engineer at SACHA Engineering.</p>
-              <ul class="tags" aria-label="Tools"><li>CATIA V5</li><li>Unigraphics NX 12</li></ul>
+              <p>Fixtures and grippers that hold Body-in-White (BIW) and A-class surface parts, for global automotive programs released to production. Calculated clamp load capacity and cantilever behaviour.</p>
+              <p class="role"><span>My role</span> Fixture and gripper design at SACHA Engineering, plus project delivery with proper version control.</p>
+              <ul class="tags" aria-label="Tools"><li>CATIA V5</li><li>Unigraphics NX 12</li><li>BGL &middot; part control</li><li>SLE &middot; BOM management</li></ul>
               <button class="lens-toggle" type="button" aria-expanded="false" aria-controls="lens-4">Engineer's lens</button>
-              <p class="lens" id="lens-4" hidden>A fixture exists to locate and clamp a part the same way every time &mdash; the same repeatability thinking now decides how objects seat in a trainee's hand in VR.</p>
+              <p class="lens" id="lens-4" hidden>Sizing a clamp for load and cantilever deflection is about making a part sit the same way every time &mdash; the same repeatability thinking now decides how objects seat in a trainee's hand in VR.</p>
             </div>
             <dl class="title-block" aria-label="Drawing title block">
               <div><dt>REV</dt><dd>A</dd></div>
@@ -396,14 +372,14 @@
           <article class="card reveal" data-cats="cad">
             <div class="card-fig">
               <!-- TODO: photo of HVAC design work, pending permission. Save as assets/hvac.jpg -->
-              <span>FIG. 05</span>
+              <span>FIG. 04</span>
             </div>
             <div class="card-body">
               <p class="card-cat">DESIGN</p>
               <h3>Automotive HVAC Design</h3>
-              <p>Product design of automotive HVAC components, including injection-moulded parts, designed for manufacture and assembly.</p>
-              <p class="role"><span>My role</span> Product design engineer at Valeo India.</p>
-              <ul class="tags" aria-label="Tools"><li>CATIA V5</li><li>DFM/DFA</li><li>GD&amp;T</li></ul>
+              <p>From simple product designs to complex HVAC parts: injection-moulded components designed for manufacture and assembly, version control on ENOVIA V6, load-testing simulations such as vibration-jig simulation to find failure points, and virtual HVAC assembly modules.</p>
+              <p class="role"><span>My role</span> Product design engineer at Valeo India, from design through simulation and virtual assembly.</p>
+              <ul class="tags" aria-label="Tools"><li>CATIA V5</li><li>ENOVIA V6</li><li>DFM/DFA</li><li>GD&amp;T</li></ul>
               <button class="lens-toggle" type="button" aria-expanded="false" aria-controls="lens-5">Engineer's lens</button>
               <p class="lens" id="lens-5" hidden>DFM/DFA means deciding how a part is made and fitted before it exists &mdash; the same habit shapes how a trainee will physically perform each step.</p>
             </div>
@@ -422,8 +398,8 @@
             <div class="card-body">
               <p class="card-cat">VISUALIZATION</p>
               <h3>Point-cloud VR Factory Walkthrough</h3>
-              <p>VR factory simulations built from point-cloud data, while deployed at Ford in 2019 &mdash; my first XR work.</p>
-              <p class="role"><span>My role</span> Built the VR factory simulations from point-cloud data.</p>
+              <p>Factory components designed from point-cloud data, then turned into a VR factory walkthrough module, while deployed at Ford in 2019 &mdash; my first XR work.</p>
+              <p class="role"><span>My role</span> Designed the factory components from point-cloud data and built the VR walkthrough module.</p>
               <ul class="tags" aria-label="Tools"><li>Autodesk Inventor</li><li>Navisworks</li></ul>
               <button class="lens-toggle" type="button" aria-expanded="false" aria-controls="lens-6">Engineer's lens</button>
               <p class="lens" id="lens-6" hidden>A point cloud is measured reality, so building the scene from it keeps the walkthrough true to the actual floor &mdash; real clearances, not guesses.</p>
@@ -459,8 +435,8 @@
             <ul class="chips"><li>Meta Quest</li><li>Pico</li><li>HTC VIVE</li><li>PC VR</li><li>On-site deployment</li></ul>
           </div>
           <div class="bom-group">
-            <h3><span class="balloon" aria-hidden="true">C</span>CAD &amp; 3D</h3>
-            <ul class="chips"><li>Blender</li><li>CATIA V5</li><li>Siemens NX</li><li>Autodesk Inventor &amp; Navisworks</li><li>NX Open API</li></ul>
+            <h3><span class="balloon" aria-hidden="true">C</span>CAD &amp; PLM</h3>
+            <ul class="chips"><li>CATIA V5</li><li>Siemens NX</li><li>Autodesk Inventor &amp; Navisworks</li><li>NX Open API</li><li>ENOVIA V6</li></ul>
           </div>
           <div class="bom-group">
             <h3><span class="balloon" aria-hidden="true">D</span>Engineering practice</h3>
@@ -481,7 +457,7 @@
             <p class="label">CERTIFICATIONS</p>
             <ul class="rows">
               <li><span>C# Unity 3D Game Development in Unity 6</span><span class="mono">Udemy</span></li>
-              <li><span>NX Open API Training with C# .NET</span><span class="mono">&nbsp;</span></li>
+              <li><span>NX Open API Training with C# .NET</span><span class="mono">Feesworth</span></li>
               <li><span>CAD Automation with Excel</span><span class="mono">Udemy</span></li>
               <li><span>Master Diploma in Product Design</span><span class="mono">CADD School</span></li>
             </ul>
@@ -503,8 +479,7 @@
         <ul class="contact-list reveal">
           <li><span class="label">EMAIL</span><a class="link" href="mailto:lakshminath.1997@gmail.com">lakshminath.1997@gmail.com</a></li>
           <li><span class="label">LINKEDIN</span>
-            <!-- TODO: LinkedIn URL — https://www.linkedin.com/in/lakshminath-k-1609lk45 showed "page doesn't exist". Replace this span with <a class="link" href="CORRECT-URL" target="_blank" rel="noopener">linkedin.com/in/...</a> -->
-            <span class="muted">Link coming soon</span>
+            <a class="link" href="https://www.linkedin.com/in/lakshminath-k-1609lk450" target="_blank" rel="noopener">linkedin.com/in/lakshminath-k-1609lk450</a>
           </li>
           <li><span class="label">GITHUB</span><a class="link" href="https://github.com/Lakshminath97" target="_blank" rel="noopener">github.com/Lakshminath97</a></li>
         </ul>
