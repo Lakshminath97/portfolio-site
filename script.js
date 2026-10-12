@@ -90,56 +90,6 @@
     update();
   }
 
-  /* ---------- SOP explainer (tabs) ---------- */
-  function initSop() {
-    var tabs = Array.prototype.slice.call(document.querySelectorAll('.sop-step'));
-    if (!tabs.length) return;
-
-    function select(tab, focus) {
-      tabs.forEach(function (t) {
-        var on = t === tab;
-        t.setAttribute('aria-selected', on ? 'true' : 'false');
-        t.setAttribute('tabindex', on ? '0' : '-1');
-        var panel = document.getElementById(t.getAttribute('aria-controls'));
-        if (!panel) return;
-        if (on) {
-          var wasHidden = panel.hidden;
-          panel.hidden = false;
-          if (wasHidden && !reduceMotion) {
-            panel.classList.remove('is-entering');
-            void panel.offsetWidth; // restart animation
-            panel.classList.add('is-entering');
-          }
-        } else {
-          panel.hidden = true;
-        }
-      });
-      if (focus) tab.focus();
-    }
-
-    tabs.forEach(function (tab, idx) {
-      tab.addEventListener('click', function () {
-        select(tab, false);
-        // On narrow screens the panel sits below the step list: bring it into view.
-        var panel = document.getElementById(tab.getAttribute('aria-controls'));
-        if (panel && window.matchMedia('(max-width: 960px)').matches) {
-          var r = panel.getBoundingClientRect();
-          if (r.top > window.innerHeight * 0.75) {
-            panel.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
-          }
-        }
-      });
-      tab.addEventListener('keydown', function (e) {
-        var next = null;
-        if (e.key === 'ArrowDown' || e.key === 'ArrowRight') next = tabs[(idx + 1) % tabs.length];
-        else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') next = tabs[(idx - 1 + tabs.length) % tabs.length];
-        else if (e.key === 'Home') next = tabs[0];
-        else if (e.key === 'End') next = tabs[tabs.length - 1];
-        if (next) { e.preventDefault(); select(next, true); }
-      });
-    });
-  }
-
   /* ---------- Work filters ---------- */
   function initFilters() {
     var buttons = Array.prototype.slice.call(document.querySelectorAll('.filter'));
@@ -223,15 +173,41 @@
     });
   }
 
+  /* ---------- Copy email to clipboard ---------- */
+  function initCopy() {
+    document.querySelectorAll('.copy-btn').forEach(function (btn) {
+      var status = btn.parentNode.querySelector('.copy-status');
+      btn.addEventListener('click', function () {
+        var text = btn.getAttribute('data-copy');
+        var done = function (ok) {
+          if (status) status.textContent = ok ? 'Copied' : 'Press Ctrl+C to copy';
+          btn.textContent = ok ? 'Copied' : 'Copy';
+          setTimeout(function () { btn.textContent = 'Copy'; if (status) status.textContent = ''; }, 1800);
+        };
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+        } else {
+          try {
+            var ta = document.createElement('textarea');
+            ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'absolute'; ta.style.left = '-9999px';
+            document.body.appendChild(ta); ta.select();
+            var ok = document.execCommand('copy');
+            document.body.removeChild(ta); done(ok);
+          } catch (e) { done(false); }
+        }
+      });
+    });
+  }
+
   function init() {
     initTheme();
     initReveals();
     initMeter();
-    initSop();
     initFilters();
     initLens();
     initNav();
     initCardImages();
+    initCopy();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);

@@ -9,6 +9,7 @@ The site picks these up **automatically by file name**: upload the file and the 
 | File name | Card |
 |---|---|
 | `forklift.jpg` | VR Forklift Training Simulator |
+| `lms.jpg` | Training LMS Integration (replaces the schematic) |
 | `cad-automation.jpg` | CAD Automation Tool (replaces the schematic) |
 | `biw-fixture.jpg` | BIW Fixture Design |
 | `hvac.jpg` | Automotive HVAC Design |
