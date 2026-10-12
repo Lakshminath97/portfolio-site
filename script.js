@@ -199,6 +199,37 @@
     });
   }
 
+  /* ---------- Hero: rotating "I build ___" line + cursor-lit grid ---------- */
+  function initHeroV2() {
+    var hero = document.querySelector('.hero-v2');
+    if (!hero) return;
+    var items = Array.prototype.slice.call(hero.querySelectorAll('.rot-item'));
+    var rot = hero.querySelector('.rotator');
+    var i = 0;
+    function underline() { if (rot && items[i]) rot.style.setProperty('--rot-w', items[i].offsetWidth + 'px'); }
+    underline();
+    window.addEventListener('resize', underline);
+    if (items.length > 1 && !reduceMotion) {
+      setInterval(function () {
+        var cur = items[i];
+        cur.classList.remove('is-active'); cur.classList.add('is-leaving');
+        setTimeout(function () { cur.classList.remove('is-leaving'); }, 700);
+        i = (i + 1) % items.length;
+        items[i].classList.add('is-active');
+        underline();
+      }, 2800);
+    }
+    var glow = hero.querySelector('.hero-glow');
+    if (!glow) return;
+    hero.addEventListener('pointermove', function (e) {
+      var r = hero.getBoundingClientRect();
+      glow.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      glow.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      hero.classList.add('is-lit');
+    });
+    hero.addEventListener('pointerleave', function () { hero.classList.remove('is-lit'); });
+  }
+
   function init() {
     initTheme();
     initReveals();
@@ -208,6 +239,7 @@
     initNav();
     initCardImages();
     initCopy();
+    initHeroV2();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
