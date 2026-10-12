@@ -2,17 +2,17 @@
 
 **Software Developer — Simulation & Immersive Training** · Chennai, India
 
-**Live:** https://portfolio-site-swart-nine-92.vercel.app · **Resume:** [resume.pdf](https://portfolio-site-swart-nine-92.vercel.app/resume.pdf)
+**Live:** https://lakshminath-k.vercel.app · **Resume:** [resume.pdf](https://lakshminath-k.vercel.app/resume.pdf)
 
 ![Portfolio home page](assets/screenshot.jpg)
 
 ## What this is
 
-My personal portfolio. It's built for one job: in under a minute, a reviewer should know who I am, what I've built, and how to reach me.
+Personal portfolio of Lakshminath K, a software developer building simulation and immersive training applications.
 
-- **Work comes first.** The flagship VR forklift simulator is a full case study (challenge, my role, outcome, stack). The other projects are short cards.
-- **Most of my work is client-owned**, so this site describes the projects rather than linking to their code.
-- **The design follows my background.** "Engineering Drawing, Dark Edition" treats each project card as a drawing sheet with a title block, and uses dimension lines as section dividers. It reflects how I came to software: through mechanical design.
+- The flagship VR forklift simulator is presented as a case study (challenge, role, outcome, stack), followed by shorter project cards.
+- Most of the work shown is client-owned, so the projects are described rather than linked to source code.
+- The visual style, "Engineering Drawing, Dark Edition", draws on a mechanical design background: project cards are styled as drawing sheets with title blocks.
 
 ## Highlights shown on the site
 
@@ -58,4 +58,4 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/lakshminath-k-1609lk450) · [Email](mailto:lakshminath.1997@gmail.com) · [Portfolio](https://portfolio-site-swart-nine-92.vercel.app)
+[LinkedIn](https://www.linkedin.com/in/lakshminath-k-1609lk450) · [Email](mailto:lakshminath.1997@gmail.com) · [Portfolio](https://lakshminath-k.vercel.app)
