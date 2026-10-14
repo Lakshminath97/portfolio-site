@@ -19,7 +19,8 @@ Personal portfolio of Lakshminath K, a software developer building simulation an
 | | |
 |---|---|
 | Flagship | VR forklift training simulator with a custom real-time simulator rig and rig-to-VR calibration (Unity, C#, Meta Quest 3, OpenXR, ESP32, REST APIs, Supabase) |
-| Integration | LMS integration tracking trainee progress, completion and evaluation |
+| VR training | Pump maintenance (assembly, disassembly, inspection) and hardware-assisted fire-safety training |
+| Integration | Training analytics dashboard tracking trainee progress, completion and evaluation |
 | Automation | C# / NX Open CAD automation tool: **40% design-efficiency gain** |
 | Leadership | Leads an 8-member cross-functional software + hardware team |
 
@@ -53,7 +54,7 @@ python3 -m http.server 8000   # then open http://localhost:8000
 ## Updating content
 
 - **Text:** edit `index.html`. Each section is marked with a comment banner.
-- **Project images:** upload to `assets/work/` with the card's file name (`forklift.jpg`, `lms.jpg`, `cad-automation.jpg`, `biw-fixture.jpg`, `hvac.jpg`, `point-cloud.jpg`). No code changes are needed. See `assets/README.md`.
+- **Project images:** upload to `assets/work/` with the card's file name (`forklift.jpg`, `pump-vr.jpg`, `fire-safety.jpg`, `lms.jpg`, `cad-automation.jpg`, `biw-fixture.jpg`, `hvac.jpg`, `point-cloud.jpg`). No code changes are needed. See `assets/README.md`.
 - **Resume:** replace `resume.pdf` in the repo root.
 
 ## Contact

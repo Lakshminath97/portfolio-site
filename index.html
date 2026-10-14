@@ -117,23 +117,20 @@
 
         <div class="cards">
           <!-- FLAGSHIP -->
-          <article class="card card-feature reveal" data-cats="vr sw">
+          <article class="card reveal" data-cats="vr sw">
             <div class="card-fig" data-img="assets/work/forklift.jpg" data-alt="VR forklift training simulator with physical simulator rig">
-              <!-- TODO: anonymized photo (no client branding) → upload as assets/work/forklift.jpg -->
+              <!-- Image: assets/work/forklift.jpg -->
               <span>FIG. 01 &middot; FLAGSHIP</span>
             </div>
             <div class="card-body">
               <p class="card-cat">VR TRAINING &middot; FLAGSHIP</p>
               <h3>VR Forklift Training Simulator</h3>
-              <p>A VR forklift world matched to a custom real-time simulator rig, with a calibration step that aligns the virtual forklift and steering to the real rig for a true driving feel.</p>
-              <dl class="case">
-                <div><dt>Challenge</dt><dd>Trainees learn through their hands, so the virtual forklift and steering had to line up exactly with the physical rig.</dd></div>
-                <div><dt>My role</dt><dd>Led the project from ideation to deployment, integrating the Unity application with the rig hardware and the training back end.</dd></div>
-                <div><dt>Outcome</dt><dd>The client called it the best training module they had seen, from user experience to VR quality.</dd></div>
-              </dl>
+              <p>VR forklift simulation integrated with a custom physical rig, calibrated for realistic steering and driving.</p>
+              <p class="role"><span>My role</span> Led development from concept to deployment, integrating Unity, simulator hardware and the training backend.</p>
+              <p class="quote">Client-recognised as best&#8209;in&#8209;class VR training.</p>
               <ul class="tags" aria-label="Stack"><li>Unity</li><li>C#</li><li>Meta Quest 3</li><li>OpenXR</li><li>ESP32</li><li>REST APIs</li><li>Supabase</li></ul>
               <button class="lens-toggle" type="button" aria-expanded="false" aria-controls="lens-1">Engineer's lens</button>
-              <p class="lens" id="lens-1" hidden>A trainee's hands learn from the wheel, so the virtual chassis and steering have to share the real rig's datum &mdash; the same idea as locating a part on a fixture before you work on it.</p>
+              <p class="lens" id="lens-1" hidden>Real-world calibration is the foundation of believable simulation. The virtual forklift must align with the physical rig’s reference frame.</p>
             </div>
             <dl class="title-block" aria-label="Drawing title block">
               <div><dt>REV</dt><dd>A</dd></div>
@@ -142,20 +139,64 @@
             </dl>
           </article>
 
-          <!-- LMS -->
+          <!-- PUMP VR -->
+          <article class="card reveal" data-cats="vr">
+            <div class="card-fig" data-img="assets/work/pump-vr.jpg" data-alt="VR pump maintenance training">
+              <!-- Image: assets/work/pump-vr.jpg -->
+              <span>FIG. 02 &middot; IMAGE TO COME</span>
+            </div>
+            <div class="card-body">
+              <p class="card-cat">VR TRAINING</p>
+              <h3>VR Pump Maintenance Training</h3>
+              <p>Interactive VR training for pump assembly, disassembly and inspection.</p>
+              <p class="role"><span>My role</span> Developed maintenance workflows for reciprocating diaphragm and centrifugal pump modules.</p>
+              <ul class="tags" aria-label="Stack"><li>Unity</li><li>C#</li><li>Meta Quest 3</li><li>OpenXR</li><li>REST APIs</li><li>Supabase</li></ul>
+              <button class="lens-toggle" type="button" aria-expanded="false" aria-controls="lens-7">Engineer's lens</button>
+              <p class="lens" id="lens-7" hidden>Correct sequencing turns maintenance procedures into repeatable, hands-on learning.</p>
+            </div>
+            <dl class="title-block" aria-label="Drawing title block">
+              <div><dt>REV</dt><dd>A</dd></div>
+              <div><dt>YEAR</dt><dd>2026</dd></div>
+              <div><dt>TYPE</dt><dd>VR &middot; ASSEMBLY</dd></div>
+            </dl>
+          </article>
+
+          <!-- FIRE SAFETY VR -->
+          <article class="card reveal" data-cats="vr">
+            <div class="card-fig" data-img="assets/work/fire-safety.jpg" data-alt="VR fire safety training">
+              <!-- Image: assets/work/fire-safety.jpg -->
+              <span>FIG. 03 &middot; IMAGE TO COME</span>
+            </div>
+            <div class="card-body">
+              <p class="card-cat">VR TRAINING</p>
+              <h3>VR Fire Safety Training</h3>
+              <p>Hardware-assisted VR training for extinguisher handling, fire classification and emergency response.</p>
+              <p class="role"><span>My role</span> Contributed to product development from proof of concept to production.</p>
+              <ul class="tags" aria-label="Stack"><li>Unity</li><li>C#</li><li>Meta Quest 3</li><li>OpenXR</li><li>ESP32</li><li>REST APIs</li><li>Supabase</li></ul>
+              <button class="lens-toggle" type="button" aria-expanded="false" aria-controls="lens-8">Engineer's lens</button>
+              <p class="lens" id="lens-8" hidden>Safety procedures stick through practice. PASS must be performed in sequence, not just memorised.</p>
+            </div>
+            <dl class="title-block" aria-label="Drawing title block">
+              <div><dt>REV</dt><dd>A</dd></div>
+              <div><dt>YEAR</dt><dd>2026</dd></div>
+              <div><dt>TYPE</dt><dd>VR + HARDWARE</dd></div>
+            </dl>
+          </article>
+
+          <!-- TRAINING ANALYTICS DASHBOARD -->
           <article class="card reveal" data-cats="sw">
-            <div class="card-fig card-fig-diagram" aria-hidden="true" data-img="assets/work/lms.jpg" data-alt="Training LMS integration">
+            <div class="card-fig card-fig-diagram" aria-hidden="true" data-img="assets/work/lms.jpg" data-alt="Training analytics dashboard">
               <!-- Optional image → assets/work/lms.jpg (no client data). Until then this schematic shows. -->
-              <svg viewBox="0 0 240 120"><g fill="none" stroke="currentColor" stroke-width="1.2"><rect x="8" y="42" width="58" height="36"/><rect x="92" y="42" width="56" height="36"/><rect x="174" y="42" width="58" height="36"/><path d="M66 60h26M148 60h26"/></g><g fill="currentColor"><path d="M92 60l-6-3v6z"/><path d="M174 60l-6-3v6z"/></g><g font-size="8" fill="currentColor" font-family="Geist Mono, monospace" text-anchor="middle"><text x="37" y="58">VR</text><text x="37" y="69">MODULE</text><text x="120" y="58">REST</text><text x="120" y="69">API</text><text x="203" y="58">LMS</text><text x="203" y="69">DASHBOARD</text></g></svg>
+              <svg viewBox="0 0 240 120"><g fill="none" stroke="currentColor" stroke-width="1.2"><rect x="8" y="42" width="58" height="36"/><rect x="92" y="42" width="56" height="36"/><rect x="174" y="42" width="58" height="36"/><path d="M66 60h26M148 60h26"/></g><g fill="currentColor"><path d="M92 60l-6-3v6z"/><path d="M174 60l-6-3v6z"/></g><g font-size="8" fill="currentColor" font-family="Geist Mono, monospace" text-anchor="middle"><text x="37" y="58">VR</text><text x="37" y="69">MODULE</text><text x="120" y="58">REST</text><text x="120" y="69">API</text><text x="203" y="58">TRAINING</text><text x="203" y="69">DASHBOARD</text></g></svg>
             </div>
             <div class="card-body">
               <p class="card-cat">SOFTWARE &amp; INTEGRATION</p>
-              <h3>Training LMS Integration</h3>
-              <p>LMS capabilities that track trainee progress, training completion and evaluation performance across immersive modules.</p>
-              <p class="role"><span>My role</span> Developed and integrated the LMS features, connecting Unity modules via REST APIs and Supabase.</p>
+              <h3>Training Analytics Dashboard</h3>
+              <p>A centralised dashboard for tracking trainee progress, completion and evaluation results.</p>
+              <p class="role"><span>My role</span> Developed the dashboard and integrated Unity modules using REST APIs and Supabase.</p>
               <ul class="tags" aria-label="Stack"><li>Unity / C#</li><li>REST APIs</li><li>Supabase</li><li>MVC</li></ul>
               <button class="lens-toggle" type="button" aria-expanded="false" aria-controls="lens-2">Engineer's lens</button>
-              <p class="lens" id="lens-2" hidden>Training only matters if it can be measured &mdash; every step a trainee takes becomes data a supervisor can act on, the same way inspection data closes the loop on a production line.</p>
+              <p class="lens" id="lens-2" hidden>Turning training activity into measurable data makes performance visible and actionable.</p>
             </div>
             <dl class="title-block" aria-label="Drawing title block">
               <div><dt>REV</dt><dd>A</dd></div>
@@ -173,11 +214,11 @@
             <div class="card-body">
               <p class="card-cat">CAD &amp; AUTOMATION</p>
               <h3>CAD Automation Tool</h3>
-              <p>Selecting a standard screw size generates its 3D part, drawing and PDF automatically &mdash; improving design efficiency by 40%.</p>
-              <p class="role"><span>My role</span> Built the standard parts and the C# / NX Open automation.</p>
+              <p>Automated screw selection to generate 3D models, engineering drawings and PDFs, improving design efficiency by 40%.</p>
+              <p class="role"><span>My role</span> Built the standard-part library and C# automation using Siemens NX Open.</p>
               <ul class="tags" aria-label="Stack"><li>C#</li><li>NX Open API</li><li>Siemens NX</li></ul>
               <button class="lens-toggle" type="button" aria-expanded="false" aria-controls="lens-3">Engineer's lens</button>
-              <p class="lens" id="lens-3" hidden>Standard parts are a catalogue problem, not a design problem &mdash; encode the selection rules once and a repeated source of error disappears from every drawing.</p>
+              <p class="lens" id="lens-3" hidden>Encode selection rules once to eliminate repetitive work and reduce design errors.</p>
             </div>
             <dl class="title-block" aria-label="Drawing title block">
               <div><dt>REV</dt><dd>A</dd></div>
@@ -189,17 +230,17 @@
           <!-- BIW -->
           <article class="card reveal" data-cats="cad viz">
             <div class="card-fig" data-img="assets/work/biw-fixture.jpg" data-alt="BIW fixture design">
-              <!-- TODO: photo (no company/customer data) → upload as assets/work/biw-fixture.jpg -->
+              <!-- Image: assets/work/biw-fixture.jpg -->
               <span>FIG. 04</span>
             </div>
             <div class="card-body">
               <p class="card-cat">DESIGN &middot; VISUALIZATION</p>
-              <h3>BIW Fixture Design</h3>
-              <p>Fixtures and grippers for BIW and A-class parts, released to production.</p>
-              <p class="role"><span>My role</span> Design, load calculations and project delivery.</p>
+              <h3>BIW Fixture &amp; Gripper Design</h3>
+              <p>Designed and released production fixtures and grippers for Body-in-White (BIW) and A-class automotive parts.</p>
+              <p class="role"><span>My role</span> Delivered fixture design, load calculations and project execution.</p>
               <ul class="tags" aria-label="Stack"><li>CATIA V5</li><li>Siemens NX 12</li><li>BGL &middot; part control</li><li>SLE &middot; BOM management</li></ul>
               <button class="lens-toggle" type="button" aria-expanded="false" aria-controls="lens-4">Engineer's lens</button>
-              <p class="lens" id="lens-4" hidden>Sizing a clamp for load and cantilever deflection is about making a part sit the same way every time &mdash; the same repeatability thinking now decides how objects seat in a trainee's hand in VR.</p>
+              <p class="lens" id="lens-4" hidden>Repeatable positioning, load capacity and controlled deflection are essential to reliable fixturing.</p>
             </div>
             <dl class="title-block" aria-label="Drawing title block">
               <div><dt>REV</dt><dd>A</dd></div>
@@ -211,17 +252,17 @@
           <!-- HVAC -->
           <article class="card reveal" data-cats="cad">
             <div class="card-fig" data-img="assets/work/hvac.jpg" data-alt="Automotive HVAC design">
-              <!-- TODO: photo, pending permission → upload as assets/work/hvac.jpg -->
+              <!-- Image: assets/work/hvac.jpg -->
               <span>FIG. 05</span>
             </div>
             <div class="card-body">
               <p class="card-cat">DESIGN</p>
               <h3>Automotive HVAC Design</h3>
-              <p>HVAC parts from simple designs to complex assemblies, validated in simulation.</p>
-              <p class="role"><span>My role</span> Design, version control, simulation and virtual assembly.</p>
+              <p>Designed automotive HVAC components and complex assemblies, supported by simulation and virtual validation.</p>
+              <p class="role"><span>My role</span> Managed design, version control, simulation and virtual assembly.</p>
               <ul class="tags" aria-label="Stack"><li>CATIA V5</li><li>ENOVIA V6</li><li>DFM/DFA</li><li>GD&amp;T</li></ul>
               <button class="lens-toggle" type="button" aria-expanded="false" aria-controls="lens-5">Engineer's lens</button>
-              <p class="lens" id="lens-5" hidden>DFM/DFA means deciding how a part is made and fitted before it exists &mdash; the same habit shapes how a trainee will physically perform each step.</p>
+              <p class="lens" id="lens-5" hidden>Designing for manufacturing and assembly early improves fit, feasibility and validation.</p>
             </div>
             <dl class="title-block" aria-label="Drawing title block">
               <div><dt>REV</dt><dd>A</dd></div>
@@ -238,12 +279,12 @@
             </div>
             <div class="card-body">
               <p class="card-cat">VISUALIZATION</p>
-              <h3>Point-cloud VR Factory Walkthrough</h3>
-              <p>A VR factory walkthrough built from point-cloud scans &mdash; my first XR project (Ford, 2019).</p>
-              <p class="role"><span>My role</span> Modelled the factory and supported the VR walkthrough.</p>
+              <h3>Point-Cloud VR Factory Walkthrough</h3>
+              <p>Built a VR factory walkthrough from point-cloud scans, preserving real-world layouts and spatial clearances. My first XR project, delivered in 2019.</p>
+              <p class="role"><span>My role</span> Modelled the factory environment and supported VR walkthrough development.</p>
               <ul class="tags" aria-label="Stack"><li>Autodesk Inventor</li><li>Navisworks</li><li>Unity3D</li></ul>
               <button class="lens-toggle" type="button" aria-expanded="false" aria-controls="lens-6">Engineer's lens</button>
-              <p class="lens" id="lens-6" hidden>A point cloud is measured reality, so building the scene from it keeps the walkthrough true to the actual floor &mdash; real clearances, not guesses.</p>
+              <p class="lens" id="lens-6" hidden>Measured scan data brings real-world accuracy to virtual environments.</p>
             </div>
             <dl class="title-block" aria-label="Drawing title block">
               <div><dt>REV</dt><dd>A</dd></div>
@@ -316,7 +357,7 @@
               <h3>Senior Software Developer</h3>
               <p class="tl-role">Spatiotech</p>
               <p>Delivering enterprise immersive training end to end &mdash; from requirement analysis and SOP structuring to development, integration and deployment across VR platforms.</p>
-              <p>Led the flagship VR forklift simulator from ideation to deployment, lead an <strong>8-member</strong> software + hardware team, and built LMS integration for trainee progress and evaluation.</p>
+              <p>Led the flagship VR forklift simulator from ideation to deployment, lead an <strong>8-member</strong> software + hardware team, and built a training dashboard for trainee progress and evaluation.</p>
             </li>
           </ol>
         </div>
