@@ -428,19 +428,6 @@ button { font: inherit; color: inherit; }
 .hero-v2 .hero-sub { max-width: 40em; }
 .hero-v2 .stats { max-width: 860px; }
 
-/* grid that lights up around the cursor */
-.hero-glow {
-  position: absolute; inset: 0; z-index: 0; pointer-events: none;
-  background-image:
-    linear-gradient(color-mix(in srgb, var(--accent) 55%, transparent) 1px, transparent 1px),
-    linear-gradient(90deg, color-mix(in srgb, var(--accent) 55%, transparent) 1px, transparent 1px);
-  background-size: 24px 24px; background-position: -1px -1px;
-  -webkit-mask-image: radial-gradient(220px circle at var(--mx, 70%) var(--my, 40%), rgba(0,0,0,.95), transparent 70%);
-          mask-image: radial-gradient(220px circle at var(--mx, 70%) var(--my, 40%), rgba(0,0,0,.95), transparent 70%);
-  opacity: 0; transition: opacity .6s var(--ease);
-}
-.hero-v2.is-lit .hero-glow { opacity: 1; }
-@media (hover: none) { .hero-glow { opacity: .5; } }
 @media (max-width: 640px) {
   .rotator { height: 2.2em; }
   .rot-item { white-space: normal; }

@@ -219,15 +219,6 @@
         underline();
       }, 2800);
     }
-    var glow = hero.querySelector('.hero-glow');
-    if (!glow) return;
-    hero.addEventListener('pointermove', function (e) {
-      var r = hero.getBoundingClientRect();
-      glow.style.setProperty('--mx', (e.clientX - r.left) + 'px');
-      glow.style.setProperty('--my', (e.clientY - r.top) + 'px');
-      hero.classList.add('is-lit');
-    });
-    hero.addEventListener('pointerleave', function () { hero.classList.remove('is-lit'); });
   }
 
   function init() {
