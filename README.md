@@ -2,7 +2,7 @@
 
 **Software Developer — Simulation & Immersive Training** · Chennai, India
 
-**Live:** https://lakshminath-k.vercel.app · **Resume:** [resume.pdf](https://lakshminath-k.vercel.app/resume.pdf)
+**Live:** https://lakshminath-k.vercel.app · **Resume:** [LakshminathK_Resume.pdf](https://lakshminath-k.vercel.app/LakshminathK_Resume.pdf)
 
 ![Portfolio home page](assets/screenshot.jpg)
 
@@ -38,7 +38,7 @@ Personal portfolio of Lakshminath K, a software developer building simulation an
 index.html        content and sections (Hero, Work, Journey, Skills & awards, Contact)
 styles.css        design tokens (CSS variables) and layout
 script.js         reveals, journey meter, filters, lens toggles, copy email, theme, image loading
-resume.pdf        downloadable resume
+LakshminathK_Resume.pdf  downloadable resume
 assets/work/      project images, picked up automatically by file name
 assets/screenshot.jpg
 ```
@@ -55,7 +55,7 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 - **Text:** edit `index.html`. Each section is marked with a comment banner.
 - **Project images:** upload to `assets/work/` with the card's file name (`forklift.jpg`, `pump-vr.jpg`, `fire-safety.jpg`, `lms.jpg`, `cad-automation.jpg`, `biw-fixture.jpg`, `hvac.jpg`, `point-cloud.jpg`). No code changes are needed. See `assets/README.md`.
-- **Resume:** replace `resume.pdf` in the repo root.
+- **Resume:** replace `LakshminathK_Resume.pdf` in the repo root.
 
 ## Contact
 
